@@ -31,9 +31,8 @@ aarontgrogg@gmail.com
 
 == Installation ==
 
-1. You can download and install this directly from here; instructions to install an unpacked Chrome Extensions:
-   https://developer.chrome.com/extensions/getstarted#unpacked
-   * I hope to have this available via the Chrome Web Store soon and will update this then.
+1. You can install this extension directly from the Chrome Web Store:
+   https://chrome.google.com/webstore/detail/convert-linkedin-profile/banjooknkfddfmhhndbheeajkfeaigaa?hl=en-US
 2. Once installed, navigate to your LinkedIn Profile page (I recommend using "View profile as: Connections")
 3. Once the page loads, a new icon should appear at the right-edge of your address bar
 4. Click the icon
@@ -41,6 +40,9 @@ aarontgrogg@gmail.com
 
 
 == Changelog ==
+
+= 2.0 2015-11-05 =
+*  Upgraded and added to the Chrome Web Store!
 
 = 1.0 2015-04-29 =
 *  First draft, hope you like it!
