@@ -3,7 +3,6 @@
 	"name": "Convert LinkedIn Profile to Printable",
 	"description": "Converts a LinkedIn Profile page into a printable format",
 	"author": "Aaron T. Grogg",
-	"default_locale": "en",
 	"version": "1.0",
 	"homepage_url": "https://github.com/aarontgrogg/Convert-LinkedIn-Profile-to-Printable",
 
