@@ -40,6 +40,10 @@ aarontgrogg@gmail.com
 
 == Changelog ==
 
+= 2.1 2018-02-25 = 
+* Updated PageStateMatcher pageUrl to latest LnkedIn URL pattern (thanks @Redorhcs).
+* Merged pull request #3 (thanks @thegiantbeast).
+
 = 2.0 2015-11-05 =
 *  Upgraded and added to the Chrome Web Store!
 
