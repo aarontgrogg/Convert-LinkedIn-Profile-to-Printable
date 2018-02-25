@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener(function(details) {
             {
                 conditions: [
                     new chrome.declarativeContent.PageStateMatcher({
-                        pageUrl: { hostSuffix: "www.linkedin.com", pathContains: "profile/preview" },
+                        pageUrl: { hostSuffix: "https://www.linkedin.com", pathContains: "/in/" },
                     })
                 ],
                 // And shows the extension's page action.
