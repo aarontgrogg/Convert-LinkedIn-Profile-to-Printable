@@ -2,51 +2,51 @@
  *
  * Name: Convert LinkedIn Profile to Printable
  * Description: Converts a LinkedIn Profile page into a printable format
- * Author: Aaron T. Grogg
+ * Author: Aaron T. Grogg (Modified by RS Tyler Schroder
  *
  * Hides a bunch of elements, and changes the layout of others, to make the page printable.
  *
  */
 
+#activity,
+#aux,
+#connections,
+#following-container,
+#footer,
 #global-error,
-#preview-ctx,
-.account-icons,
+#groups-container,
 #header,
-.more-info .loading,
+#preview-ctx,
+#profile-skills h5,
+#text-ad-container,
+#website-view li+li,
+.account-icons,
 .address-book,
+.background-section .education-associated dd.associated-endorsements p,
+.background-section .education-associated dt span,
+.background-section .education-associated dt span.closed,
+.background-section .education-associated ul li p span,
+.background-section .patents-associated dt span,
+.background-section .projects-associated dt span,
+.background-section h4 a .external-link-indicator,
+.background-section-drag-proxy .education-associated dd.associated-endorsements p,
+.background-section-drag-proxy .education-associated dt span,
+.background-section-drag-proxy .patents-associated dt span,
+.background-section-drag-proxy .projects-associated dt span,
 .compact-view .endorse-button,
+.demographic-info,
+.edit-tools,
+.endorse-count,
+.endorsements-nav,
+.endorsers-container,
+.more-info .loading,
+.profile-aux,
+.profile-card table,
+.profile-card-extras .profile-actions .show-more-info,
+.see-more-less,
 .view-less-bar,
 .write-endorsement,
-.profile-aux,
-.demographic-info,
-.profile-card table,
-#website-view li+li,
-.profile-card-extras .profile-actions .show-more-info,
-#text-ad-container,
-#activity,
-.background-section .education-associated ul li p span,
-#profile-skills h5,
-.see-more-less,
-a.toggle-show-more,
-.background-section .education-associated dt span.closed,
-.background-section h4 a .external-link-indicator,
-.endorse-count,
-.endorsers-container,
-.endorsements-nav,
-#connections,
-#groups-container,
-#following-container,
-#aux,
-#footer,
-.edit-tools,
-.background-section .education-associated dt span,
-.background-section .projects-associated dt span,
-.background-section .patents-associated dt span,
-.background-section-drag-proxy .education-associated dt span,
-.background-section-drag-proxy .projects-associated dt span,
-.background-section-drag-proxy .patents-associated dt span,
-.background-section .education-associated dd.associated-endorsements p,
-.background-section-drag-proxy .education-associated dd.associated-endorsements p {
+a.toggle-show-more {
     display: none!important;
 }
 #contact-info-section {
@@ -76,12 +76,12 @@ a.toggle-show-more,
 #body,
 #body .hp-nus-wrapper {
     width: 100%!important;
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0!important !important;
+    padding: 0!important !important;
 }
 #wrapper {
     width: auto!important;
-    padding: .5em!important;
+    padding: 0.5em!important !important;
 }
 #profile {
     width: 100%!important;
@@ -89,14 +89,14 @@ a.toggle-show-more,
 .profile-card {
     width: 100%!important;
 }
-.profile-card .profile-picture,
-.profile-card .profile-overview {
+.profile-card .profile-overview,
+.profile-card .profile-picture {
     display: table-cell!important;
     width: none!important;
     float: none!important;
     vertical-align: middle!important;
-    margin: 0!important;
-    padding: 2em!important;
+    margin: 0!important !important;
+    padding: 2em!important !important;
     height: auto!important;
     line-height: 1!important;
     background: 0!important;
@@ -110,16 +110,16 @@ a.toggle-show-more,
     padding-top: 0!important;
     padding-bottom: 0!important;
 }
-.profile-top-card,
-.profile-card .profile-picture img,
 .more-info,
-.profile-card-extras .profile-actions,
 .profile-activity,
 .profile-background,
-.profile-endorsements,
-.profile-groups,
-.profile-following,
+.profile-card .profile-picture img,
+.profile-card-extras .profile-actions,
 .profile-connections,
+.profile-endorsements,
+.profile-following,
+.profile-groups,
+.profile-top-card,
 .profile-your-notes {
     -webkit-box-shadow: none!important;
     -moz-box-shadow: none!important;
@@ -131,10 +131,10 @@ a.toggle-show-more,
 .more-info table th,
 .more-info table tr.twitter-presence th,
 .more-info table tr.www-presence th,
-.profile-card-extras .profile-actions .public-profile span,
-.profile-card-extras .profile-actions .public-profile a {
-    margin: 0!important;
-    padding: 0!important;
+.profile-card-extras .profile-actions .public-profile a,
+.profile-card-extras .profile-actions .public-profile span {
+    margin: 0!important !important;
+    padding: 0!important !important;
     background: 0!important;
     font-size: 12px!important;
     line-height: 1.7em!important;
@@ -152,18 +152,18 @@ a.toggle-show-more,
 .profile-card-extras .profile-actions {
     float: left!important;
     clear: left!important;
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0!important !important;
+    padding: 0!important !important;
 }
 .profile-card-extras .profile-actions {
-    margin: -38px 0 0!important;
+    margin: -38px 0 0!important !important;
     border: 0!important;
     background: 0!important;
 }
 .profile-card-extras .profile-actions ul,
 .profile-card-extras .profile-actions ul li {
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0!important !important;
+    padding: 0!important !important;
 }
 .skills-section {
     display: inline!important;
@@ -173,14 +173,14 @@ a.toggle-show-more,
     display: inline-block!important;
     vertical-align: middle!important;
     zoom: 1!important;
-    margin: 0 5px 5px 0!important;
+    margin: 0 5px 5px 0 !important;
 }
 .background-section .education-associated,
-.background-section .projects-associated,
 .background-section .patents-associated,
+.background-section .projects-associated,
 .background-section-drag-proxy .education-associated,
-.background-section-drag-proxy .projects-associated,
-.background-section-drag-proxy .patents-associated {
+.background-section-drag-proxy .patents-associated,
+.background-section-drag-proxy .projects-associated {
     margin-left: 0!important;
 }
 .compact-view {
@@ -189,6 +189,7 @@ a.toggle-show-more,
 .compact-view .endorse-item.extra-skill {
     display: inline-block!important;
 }
+#background-additional-info,
 #background-certifications,
 #background-courses,
 #background-education,
@@ -202,8 +203,7 @@ a.toggle-show-more,
 #background-skills,
 #background-summary,
 #background-test-scores,
-#background-volunteering,
-#background-additional-info {
+#background-volunteering {
     margin-top: 15px!important;
 }
 .background-section .education-associated dt:after {
@@ -215,7 +215,7 @@ a.toggle-show-more,
     width: 5px!important;
     margin-left: 2px!important;
     margin-right: 0!important;
-    background: url(//www.linkedin.com/scds/common/u/images/apps/profile/sprite/sprite_profile_edit_tools_v12.png) no-repeat 0 -850px!important;
+    background: url("//www.linkedin.com/scds/common/u/images/apps/profile/sprite/sprite_profile_edit_tools_v12.png") no-repeat 0 -850px!important;
     content: ''!important;
 }
 #languages-view ol {
@@ -233,7 +233,7 @@ a.toggle-show-more,
 #languages-view span {
     display: table-cell!important;
     min-width: 8em!important;
-    padding: .25em!important;
+    padding: 0.25em!important !important;
 }
 .endorsement-info {
     float: none!important;
@@ -246,17 +246,32 @@ a * {
     color: #333!important;
 }
 @media print {
-    p,
     h2,
-    h3 {
+    h3,
+    p {
         orphans: 3!important;
-        widows: 3
+        widows: 3;
     }
     h2,
     h3 {
-        page-break-after: avoid
+        page-break-after: avoid!important;
     }
     .background-section hgroup {
-        page-break-inside: avoid
-    }!important;
+        page-break-inside: avoid!important;
+    }
+}
+.settings-header {
+    display: none!important;
+}
+#directory {
+    display: none!important;
+}
+.member-connections {
+    display: none!important;
+}
+.wide-footer {
+    display: none!important;
+}
+#header-banner {
+    display: none!important;
 }
